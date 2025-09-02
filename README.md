@@ -1,6 +1,6 @@
 # House-Prices-Prediction
 This project predicts house sale prices using the Ames Housing dataset. It applies feature preprocessing, regression models, and hyperparameter tuning to build a robust prediction pipeline.
------------------------------
+
 ## Workflow
 
 1. Data Preparation
@@ -13,7 +13,7 @@ This project predicts house sale prices using the Ames Housing dataset. It appli
 - Baseline model: Linear Regression (numerical only).
 - Regularized models: Ridge & Lasso Regression.
 - Ensemble model: Random Forest Regressor.
-- Hyperparameter tuning with GridSearchCV.
+- Hyperparameter tuning with cross validation: GridSearchCV.
 
 3. Evaluation Metrics
 - R² Score
@@ -26,4 +26,5 @@ This project predicts house sale prices using the Ames Housing dataset. It appli
 |Linear Regression	  |0.826        	|Baseline (numerical only)|
 |Ridge Regression	    |0.878	        |Better with multicollinearity|
 |Lasso Regression	    |0.895	        |Strongest linear model|
-|Random Forest	      |0.892	        |Almost as good as Lasso|
+|Random Forest	      |0.892	        |As good as Lasso|
+|Grid Search CV      |0.899          |Lasso is still the strongest model|
